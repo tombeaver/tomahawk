@@ -20,27 +20,192 @@
     </head>
     <body>
 
-    	<section class="top">
-    		<section class="logo"><img src="img/logo.png"></section>
-    		<section class="hamburger-icon">
-    			<a href="#close">
-    				<section class="hamburger">
-    					<section class="bar"></section>
-    					<section class="bar"></section>
-    					<section class="bar"></section>
-    				</section>
-    			</a>
-    		</section>
-    	</section>
+<!--Hamburger Nav -->
+        <!-- Hamburger -->
+    	<div class="hamburger-icon">
+    		<div class="hamburger">
+    			<div class="bar"></div>
+    			<div class="bar"></div>
+    			<div class="bar"></div>
+    		</div>
+    	</div>
+
+        <!-- Hamburger Nav -->
+        <div class="hamburger-nav">
+            <ol class="navLink">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#chefs">Our Chefs</a></li>
+                <li><a id="makeRes" href="#">Reservations</a></li>
+                <li><a href="#location">Location</a></li>
+            </ol>
+        </div>
+
+<!-- Hero Image -->
+        <div class="full largeImg" id="hero">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-white.svg">
+                </a>
+            </div>
+        </div>
+
+<!-- Welcome div -->
+        <div class="full mission white">
+            <div class="container">
+                <h1>Welcome to Tomahawk Steakhouse</h1>
+                <p>We strive to create an experience you'e never before had and will never forget.</p>
+            </div>
+        </div>
+<!-- Signature Items -->
+        <div class="full signature">
+            <div class="container">
+                <h1>Signature Items</h1>
+                <a class="button" href="menu.html">Full Menu</a>
+            </div>
+            <div class="largeImg" id="dish1"></div>
+            <div class="largeImg" id="dish1"></div>
+            <div class="largeImg" id="dish1"></div>
+        </div>
+<!-- Gallery -->
+        <div class="full gallery">
+            <ol>
+                <img src="#" alt="alt tag">
+                <img src="#" alt="alt tag">
+                <img src="#" alt="alt tag">
+                <img src="#" alt="alt tag">
+                <img src="#" alt="alt tag">
+                <img src="#" alt="alt tag">
+            </ol>
+        </div>
+<!-- Review -->
+        <div class="full review">
+
+        </div>
+<!-- Our Chefs -->
+        <div class="full chefs">
+            <h1>Our Chefs</h1>
+            <!-- Paula DaSilva -->
+            <div id="paula-dasilva">
+                <div class="container">
+                    <div class="chefs-card">
+                        <h1>Executive Chef <br>Paula DaSilva</h1>
+                        <p>Lorem ipsum dolor sit amet, exerci assueverit sea ne, sale falli fuisset in vel, ei tale meis omnesque pri. Te eum vitae partiendo. Sea natum malorum disputando at. Eu has laudem timeam tamquam. Labores salutandi signiferumque mea et, eruditi habemus persecuti duo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fabio Trabocchi -->
+            <div id="fabio-trabocchi">
+                <div class="container">
+                    <div class="chefs-card">
+                        <h1>Chef <br>Fabio Trabocchi</h1>
+                        <p>Lorem ipsum dolor sit amet, exerci assueverit sea ne, sale falli fuisset in vel, ei tale meis omnesque pri. Te eum vitae partiendo. Sea natum malorum disputando at. Eu has laudem timeam tamquam. Labores salutandi signiferumque mea et, eruditi habemus persecuti duo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Michael White -->
+            <div id="michael-white">
+                <div class="container">
+                    <div class="chefs-card">
+                        <h1>Chef <br>Michael White</h1>
+                        <p>Lorem ipsum dolor sit amet, exerci assueverit sea ne, sale falli fuisset in vel, ei tale meis omnesque pri. Te eum vitae partiendo. Sea natum malorum disputando at. Eu has laudem timeam tamquam. Labores salutandi signiferumque mea et, eruditi habemus persecuti duo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Reservations -->
+        <div class="full reservations white">
+            <div class="container">
+                <h1>Reserve Your Seat</h1>
+                <a id ="resBtn" class="button" href="#reservation-modal">Reserve</a>
+            </div>
+        </div>
+<!-- Location -->
+        <div class="full location">
+            <div class="largeImg" id="map"></div>
+        </div>
+<!-- Footer -->
+        <footer>
+            <ol>
+                <li><a href="#chefs">Our Chefs</a></li>
+                <li><a href="#contact-us.html">Contact Us</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ol>
+        </footer>
+
+<!-- Modal -->
+        <div class="modal" id="reservation-modal">
+            <div class="modal-content">
+            <!-- The close button -->
+                <span class="close">&times;</span>
+            <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo.svg">
+                </div>
+
+                <div class="steps" id="step1">
+                    <form>
+                <!-- Guest Count DropDown -->
+                        <select>
+                            <option selected disabled hidden>How many guests will this reservation be for?</option>
+                            <option>One</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                            <option>Four</option>
+                            <option>Five</option>
+                            <option>More than five</option>
+                        </select>
+                <!-- Lunch or Dinner Radio Buttons -->
+                        <label class="radio-container">Lunch
+                            <input type="radio" checked="checked" name="time">
+                            <span class="circle"></span>
+                        </label>
+                        <label class="radio-container">Dinner
+                            <input type="radio" name="time">
+                            <span class="circle"></span>
+                        </label>
+                <!-- Calendar -->
+                        
+                            <div id="calendar"></div>
+                        
+
+                <!-- Submit -->
+                        <div class="resButton">
+                            <button class="button" onclick="next('#step2')">Make Your Reservation</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="steps hide" id="step2">
+
+                    <div class="resButton">
+                        <button class="button" onclick="next('#step3')">Next</button>
+                    </div>
+                </div>
+                <div class="steps hide" id="step2">
+                    <div class="resButton">
+                        <button class="button" onclick="next('#finished')">Finished</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
 
 
 
+       
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-ui-calendar.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/fullCalendar.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

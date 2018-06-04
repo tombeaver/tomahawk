@@ -5,7 +5,7 @@
     },
     "compile": {
         "style": "nested",             // String | Output style: nested/expanded/compact/compressed
-        "line-numbers": true,      // Bool   | Emit comments showing original line numbers
+        "line-numbers": false,      // Bool   | Emit comments showing original line numbers
         "line-comments": true,     // Bool   | Alias for line-numbers, does not override
         "load-path": false,         // List   | Sass import paths: e.g. [ "C:\bourbon", "C:\compass" ]
         "plugin-path": false,       // String | Path to autoload plugins (libsass issue 878)
